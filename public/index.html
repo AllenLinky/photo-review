@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <meta
+      name="description"
+      content="上传一张照片，AI 按五个维度打分、挑出具体问题、给出下次能照着做的改法；原图、参数和点评都留在你自己的服务器上。"
+    />
+    <meta name="theme-color" content="#f7f6f3" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0e1012" media="(prefers-color-scheme: dark)" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>照片点评</title>
+    <link rel="icon" href="favicon.svg" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#/">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>照片点评</span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#/" data-nav="home">点评</a>
+        <a href="#/archive" data-nav="archive">档案</a>
+        <a href="#/settings" data-nav="settings" style="display: none">设置</a>
+      </nav>
+      <div class="meta" id="meta"></div>
+    </header>
+    <main id="app" class="app"></main>
+    <div id="toasts" class="toasts" aria-live="polite"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
