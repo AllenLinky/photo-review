@@ -1,0 +1,14 @@
+{
+  "name": "photo-review",
+  "version": "1.0.0",
+  "private": true,
+  "description": "照片点评：上传一张照片，模型五维打分、挑毛病、给改法，档案只存在本机",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test-smoke.cjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
